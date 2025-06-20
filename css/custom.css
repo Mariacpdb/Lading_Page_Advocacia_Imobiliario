@@ -89,9 +89,3 @@ a.bg-green-500:hover {
         height: 70px;
     }
 }
-.nossa-historia {
-  background-color: #2b2b2b; /* Cor de fundo escura, similar à imagem */
-  color: #ffffff;           /* Cor do texto branca */
-  padding: 50px 20px;      /* Espaçamento interno para não ficar colado nas bordas */
-  text-align: center;      /* ✨ A MÁGICA ACONTECE AQUI! ✨ */
-}

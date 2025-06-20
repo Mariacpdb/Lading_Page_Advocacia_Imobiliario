@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliveira Rodrigues Advocacia</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuração de Cores Personalizadas -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'marinho': '#1A1A1A',           
+                        'marinho-claro': '#262626',    
+                        'dourado': '#D4AF37',
+                        'cinza-claro': '#E2E8F0',
+                        'cinza-medio': '#A3A3A3',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="bg-marinho text-cinza-claro">
+
+    <!-- Cabeçalho -->
+    <header class="bg-marinho-claro shadow-lg sticky top-0 z-50 border-b border-dourado/20">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div>
+                <a href="#home" class="nav-link-logo">
+                    <img src="images/logo-oliveira-rodrigues.png" alt="Logo Oliveira Rodrigues Advocacia" class="h-20 w-auto">
+                </a>
+            </div>
+
+            <div id="desktop-nav" class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-cinza-claro hover:text-dourado">Início</a>
+                <a href="#about" class="nav-link text-cinza-claro hover:text-dourado">Sobre</a>
+                <a href="#services" class="nav-link text-cinza-claro hover:text-dourado">Serviços</a>
+                <a href="#contact" class="nav-link text-cinza-claro hover:text-dourado">Contato</a>
+                <a href="https://wa.me/553184597201?text=Olá! Gostaria de uma assessoria jurídica." target="_blank"
+                   class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg transition-transform transform hover:scale-105">
+                    Fale no WhatsApp
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-cinza-claro hover:text-dourado">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-marinho-claro">
+            <a href="#home" class="nav-link-mobile block py-2 text-cinza-claro hover:text-dourado">Início</a>
+            <a href="#about" class="nav-link-mobile block py-2 text-cinza-claro hover:text-dourado">Sobre</a>
+            <a href="#services" class="nav-link-mobile block py-2 text-cinza-claro hover:text-dourado">Serviços</a>
+            <a href="#contact" class="nav-link-mobile block py-2 text-cinza-claro hover:text-dourado">Contato</a>
+            <a href="https://wa.me/553184597201?text=Olá! Gostaria de uma assessoria jurídica." target="_blank"
+               class="block mt-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg text-center">
+                Fale no WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home" class="py-20 bg-marinho">
+            <div class="hero-section">
+                <div class="flex items-center justify-center w-full h-full">
+                    <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                        <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                            Soluções Jurídicas de Excelência
+                        </h1>
+                        <p class="text-lg md:text-xl text-cinza-claro max-w-3xl mx-auto mb-8">
+                            Compromisso, ética e resultados para defender os seus direitos.
+                        </p>
+                        <a href="#services" class="bg-dourado hover:bg-opacity-80 text-marinho font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+                            Conheça as Áreas de Atuação
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Por que nos escolher -->
+            <div class="bg-marinho container mx-auto px-6 py-20">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-cinza-claro"> Por que confiar na nossa advocacia?</h2>
+                    <p class="text-lg text-cinza-medio mt-2"> Segurança jurídica, estratégia e compromisso com seus objetivos.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    <div>
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-dourado/10 text-dourado mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-cinza-claro mb-2">Análise Estratégica</h3>
+                        <p class="text-cinza-medio">
+                            Desenvolvemos teses e planos sob medida para garantir o sucesso da sua causa.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-dourado/10 text-dourado mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M12 8c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm0 2c-2.21 0-4 1.79-4 4v1h8v-1c0-2.21-1.79-4-4-4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-cinza-claro mb-2">Atendimento Personalizado</h3>
+                        <p class="text-cinza-medio">
+                            Nossa equipe se dedica a entender cada detalhe do seu caso para oferecer a melhor solução.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-dourado/10 text-dourado mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-cinza-claro mb-2">Foco em Resultados</h3>
+                        <p class="text-cinza-medio">
+                            Atuamos com diligência e foco em métricas e resultados concretos para nossos clientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nós -->
+        <section id="about" class="py-20 bg-marinho-claro">  
+           <div class="container mx-auto px-6 text-center"> <h2 class="text-4xl font-bold mb-6">Nossa História</h2>
+
+                <p class="text-cinza-medio">
+                    Fundado em 2010, nosso escritório nasceu da paixão pelo direito e do desejo de ajudar pessoas e empresas a navegarem com segurança no complexo ambiente jurídico. Crescemos e nos tornamos referência em advocacia, sempre com foco na parceria e na inovação.
+                </p>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section id="services" class="py-20 bg-marinho">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-6 text-center">Áreas de Atuação</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-marinho-claro p-6 rounded-lg border border-dourado/20">
+                        <h3 class="text-xl font-bold text-dourado mb-2">Direito Civil</h3>
+                        <p class="text-cinza-medio">Contratos, obrigações, responsabilidade civil, família e sucessões.</p>
+                    </div>
+                    <div class="bg-marinho-claro p-6 rounded-lg border border-dourado/20">
+                        <h3 class="text-xl font-bold text-dourado mb-2">Direito Empresarial</h3>
+                        <p class="text-cinza-medio">Consultoria para empresas, societário, recuperação judicial e falências.</p>
+                    </div>
+                    <div class="bg-marinho-claro p-6 rounded-lg border border-dourado/20">
+                        <h3 class="text-xl font-bold text-dourado mb-2">Direito do Trabalho</h3>
+                        <p class="text-cinza-medio">Defesa dos direitos de empregados e empregadores, consultoria e contencioso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contact" class="py-20 bg-marinho-claro">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-6">Entre em Contato</h2>
+                <p class="text-cinza-medio mb-6">Estamos prontos para conversar sobre sua necessidade.</p>
+                <a href="https://wa.me/553184597201?text=Olá! Gostaria de uma assessoria jurídica." target="_blank"
+                   class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
+                    Iniciar Conversa no WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-marinho-claro text-cinza-medio py-12 border-t border-dourado/20">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Oliveira Rodrigues Advocacia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

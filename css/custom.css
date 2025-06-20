@@ -1,0 +1,97 @@
+/* ======== ESTILO GERAL ======== */
+
+/* Fonte padrão */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navegação SPA: Esconde todas as seções */
+.page-section {
+    display: none;
+}
+
+/* Mostra a Home ao carregar */
+#home {
+    display: block;
+}
+
+/* Link ativo no menu */
+.nav-link.active {
+    color: #D4AF37;
+    font-weight: 600;
+}
+
+/* ======== HERO COM PARALLAX ======== */
+.hero-section {
+    min-height: 80vh !important;
+    background-image: url("../images/Fundo_site.png") !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative !important;
+}
+
+
+
+/* Garante que o conteúdo fique acima do overlay */
+.hero-section > div {
+    position: relative;
+    z-index: 2;
+}
+
+/* ======== LOGO ======== */
+.nav-link-logo img {
+    height: 50px !important;
+    width: auto !important;
+}
+
+
+header nav .nav-link-logo {
+    display: flex;
+    align-items: center;
+}
+
+/* ======== MELHORIAS GERAIS ======== */
+
+/* Suaviza transições dos links */
+a {
+    transition: all 0.3s ease;
+}
+
+/* Hover nos links do menu */
+.nav-link:hover,
+.nav-link-mobile:hover {
+    color: #D4AF37;
+}
+
+/* Hover no botão WhatsApp */
+a.bg-green-500:hover {
+    background-color: #059669;
+    transform: scale(1.05);
+}
+
+/* Cartões de serviços com hover */
+.card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.2);
+    transform: translateY(-4px);
+}
+
+/* ======== RESPONSIVIDADE ======== */
+
+/* Logo menor no mobile */
+@media (max-width: 768px) {
+    .nav-link-logo img {
+        height: 70px;
+    }
+}
+.nossa-historia {
+  background-color: #2b2b2b; /* Cor de fundo escura, similar à imagem */
+  color: #ffffff;           /* Cor do texto branca */
+  padding: 50px 20px;      /* Espaçamento interno para não ficar colado nas bordas */
+  text-align: center;      /* ✨ A MÁGICA ACONTECE AQUI! ✨ */
+}

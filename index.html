@@ -19,15 +19,14 @@
         .hero-bg-solid {
             background-color: #1b1b1b;
         }
-        .parallax-bg {
+       .parallax-bg {
+            /* Imagem de fundo padrão para todos os dispositivos */
             background-image: url('../images/Fundo_site.png');
-            background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
-
-     /* Aplica o efeito parallax apenas em telas maiores */
+        /* Aplica o efeito parallax (background-attachment: fixed) APENAS em telas com largura mínima de 768px (tablets e desktops) */
         @media (min-width: 768px) {
             .parallax-bg {
                 background-attachment: fixed;

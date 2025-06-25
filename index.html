@@ -26,6 +26,13 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+     /* Aplica o efeito parallax apenas em telas maiores */
+        @media (min-width: 768px) {
+            .parallax-bg {
+                background-attachment: fixed;
+            }
+        }
     </style>
 </head>
 <body class="bg-white">

@@ -1,85 +1,45 @@
-/* ======== ESTILO GERAL ======== */
+
 
 /* Fonte padrão */
 body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Link ativo no menu */
-.nav-link.active {
-    color: #D4AF37;
-    font-weight: 600;
-}
 
-/* ======== HERO COM PARALLAX ======== */
-.hero-section {
-    min-height: 85vh !important;
-    background-image: url("../images/Fundo_site.png") !important;
-    background-attachment: fixed !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    position: relative !important;
-}
-
-/* Garante que o conteúdo fique acima do overlay */
-.hero-section > div {
-    position: relative;
-    z-index: 2;
-}
-
-/* ======== LOGO ======== */
-.nav-link-logo img {
-    height: 50px !important;
-    width: auto !important;
-}
-
-header nav .nav-link-logo {
-    display: flex;
-    align-items: center;
-}
-
-/* ======== MELHORIAS GERAIS ======== */
-
-/* Suaviza transições dos links */
 a {
     transition: all 0.3s ease;
 }
 
-/* Hover nos links do menu */
-.nav-link:hover,
-.nav-link-mobile:hover {
-    color: #D4AF37;
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
 }
 
-/* Cartões de serviços com hover */
-.card {
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+.hero-bg-solid {
+    background-color: #1b1b1b;
 }
 
-.card:hover {
-    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.2);
-    transform: translateY(-4px);
+.parallax-bg {
+    /* Imagem de fundo padrão para todos os dispositivos */
+    /* Lembre-se de usar o caminho correto para sua imagem */
+    background-image: url('../imagens/Fundo_site.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-/* ======== RESPONSIVIDADE ======== */
-
-/* Regras para telas com largura máxima de 768px (tablets e celulares) */
-@media (max-width: 768px) {
-
-    /* Logo um pouco maior no mobile para melhor visualização */
-    .nav-link-logo img {
-        height: 60px; /* Ajustei de 70px para 60px, que fica mais proporcional */
-    }
-
-    /* Ajustes para a seção principal em telas pequenas */
-    .hero-section {
-        /* Desativa o efeito parallax no mobile, que causa o zoom indesejado.
-           A imagem vai rolar junto com a página. */
-        background-attachment: scroll !important;
-
-        /* Centraliza a imagem para um melhor enquadramento no mobile */
-        background-position: center center !important;
+/* Aplica o efeito parallax (background-attachment: fixed) APENAS em telas com largura mínima de 768px (tablets e desktops) */
+@media (min-width: 768px) {
+    .parallax-bg {
+        background-attachment: fixed;
     }
 }
+
+
+
+
+
+
+
+
+

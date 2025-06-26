@@ -66,7 +66,7 @@ O objetivo é apresentar os serviços, a especialista responsável e fornecer ca
 │   └── 📄 Fundo_site.png
 │
 ├── 📁 js/
-│   └── 📄 logica.js
+│   └── 📄 logica.js         # JavaScript (A lógica do site)
 │
 ├── 📁 videos/
 │   └── 📄 Vídeo sem título ‐ Feito com o Clipchamp.mp4

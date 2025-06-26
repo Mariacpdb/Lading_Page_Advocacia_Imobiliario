@@ -62,11 +62,14 @@ O objetivo é apresentar os serviços, a especialista responsável e fornecer ca
 │
 ├── 📁 imagens/
 │   ├── 📄 logo-oliveira-rodrigues.png
-│   ├── 📄 foto-advogada.jpg
-│   └── 📄 fundo-parallax.jpg
+│   ├── 📄 Pagando de advogada simpática.jpg
+│   └── 📄 Fundo_site.png
+│
+├── 📁 js/
+│   └── 📄 logica.js
 │
 ├── 📁 videos/
-│   └── 📄 video-fundo.mp4
+│   └── 📄 Vídeo sem título ‐ Feito com o Clipchamp.mp4
 │
 └── 📄 README.md             # Este ficheiro de documentação
 

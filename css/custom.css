@@ -21,7 +21,7 @@ a {
 
 .parallax-bg {
     /* Imagem de fundo padrão para todos os dispositivos */
-    /* Lembre-se de usar o caminho correto para sua imagem */
+    
     background-image: url('../imagens/Fundo_site.png'); 
     background-position: center;
     background-repeat: no-repeat;

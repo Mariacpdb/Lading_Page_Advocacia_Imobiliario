@@ -43,6 +43,7 @@ a {
     background-color: rgb(0, 0, 0); /* Garante o fundo preto, caso não tenha */
 }
 
-
-
-
+/* Evita a barra piscante do cursor (caret) em todos os elementos não-editáveis */
+*:not(input):not(textarea) {
+    caret-color: transparent;
+}
